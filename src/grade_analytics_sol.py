@@ -71,10 +71,13 @@ def generate_grade_report(student_data: dict, bonus: float = 0.0) -> dict:
             continue
 
         # FIX: 1. Apply curve if applicable
-        final_scores = apply_curved_bonus(scores, bonus) if bonus > 0 else scores
+        if bonus > 0:
+            curved_scores = apply_curved_bonus(scores, bonus)
+        else:
+            curved_scores = scores
 
         # 2. Calculate the average score
-        avg_score = calculate_average(final_scores)
+        avg_score = calculate_average(curved_scores)
 
         # 3. Map average score to letter grade
         report[student] = map_score_to_letter(avg_score)
