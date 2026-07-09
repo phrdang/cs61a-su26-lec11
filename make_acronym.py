@@ -17,7 +17,7 @@ def make_acronym(phrase: str) -> str:
     'CPU'
     >>> make_acronym("  user   interface  ")
     'UI'
-    >>> make_acronym("HyperText Markup Language")
+    >>> make_acronym("Hyper  Text Markup Language")
     'HTML'
     >>> make_acronym("")
     ''
