@@ -1,3 +1,6 @@
+# Run tests with:
+# uv run pytest tests/test_grade_analytics.py
+
 """
 Grade Analytics Tool
 --------------------

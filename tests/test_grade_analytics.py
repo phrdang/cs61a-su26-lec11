@@ -1,5 +1,5 @@
-# Run these tests with:
-# uv run pytest
+# Run tests with:
+# uv run pytest tests/test_grade_analytics.py
 
 import pytest
 from grade_analytics import (
