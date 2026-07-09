@@ -7,11 +7,9 @@ def make_acronym(phrase: str) -> str:
     Words can be separated by one or more spaces.
     """
     words = phrase.split(" ")
-    print(f"words is {words}")
     acronym = ""
     for i in range(len(words)):
         current_word = words[i]
-        print(f"current_word is {current_word}")
         first_letter = current_word[0]
         acronym += first_letter
     return acronym
